@@ -1,5 +1,6 @@
-/* @import '../../styles/variables.scss'; */
+@import '../../styles/variables.css';
 
-.conteiner {
-  width: 123px;
+.container {
+  width: var(--desktop);
+  margin: 0 auto;
 }

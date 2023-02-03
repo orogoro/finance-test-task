@@ -1,0 +1,14 @@
+@import '../../styles/variables.css';
+
+.container {
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: var(--lightColor);
+  border-bottom: 1px solid var(--secondaryLightColor);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  border-radius: 10px;
+  padding: 5px 8px;
+  background-color: var(--whiteColor);
+  border: 1px solid var(--secondaryLightColor);
+  transition: var(--transition);
+
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: var(--primeryHoverColor);
+}
+
+.container:nth-child(n + 2) {
+  margin-left: 10px;
+}
+
+.divCorectionStyles {
+  display: flex;
+  align-items: center;
+}
+
+.containerTitle {
+  margin-left: 10px;
+}
+
+.containerImage {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--secondaryLightColor);
+}
+
+.image {
+  width: 15px;
+}
+
+.topImg {
+  background-color: var(--secondaryGreenColor);
+}
+.downImg {
+  background-color: var(--secondaryRedColor);
+  transform: rotate(180deg);
+}
+
+.title {
+  font-size: 17px;
+}
+
+.containerChange {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text {
+  font-size: 16px;
+  /* transform: translateY(calc(-100% + 28px)); */
+  transition: var(--transition);
+}
+
+/* .animanion {
+  transform: translateY(calc(-100% + 16px));
+} */
+
+.top {
+  color: var(--greenColor);
+}
+
+.down {
+  color: var(--redColor);
+}
+
+.divContainer {
+  overflow: hidden;
+}

@@ -1,21 +1,23 @@
-import { useEffect, useState } from 'react';
-
-import { socket } from '../API/APIpriceTickers';
+import { Suspense, lazy } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { Container } from './';
 
+const Home = lazy(() => import('../pages/HomePage'));
+
 function App() {
-  const [tikers, SetTikers] = useState([]);
-  console.log(tikers);
-
-  useEffect(() => {
-    socket.on('ticker', (ticker) => SetTikers(ticker));
-  }, []);
-
   return (
-    <div>
-      <Container />
-    </div>
+    <Container>
+      <Suspense fallback={'loading...'}>
+        <Routes>
+          <Route path='/' element={<Home />}>
+            {/* <Route path=':itemName' element={<WeedsManual />} /> */}
+          </Route>
+
+          <Route path='*' element={<Navigate to='/' />} />
+        </Routes>
+      </Suspense>
+    </Container>
   );
 }
 

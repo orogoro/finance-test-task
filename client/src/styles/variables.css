@@ -1,0 +1,17 @@
+:root {
+  /* Screen sizes */
+  --desktop: 1280px;
+
+  /* Colors */
+  --redColor: #d60202;
+  --secondaryRedColor: #f3a6a6;
+  --lightColor: #f0efef;
+  --secondaryLightColor: #a6a6a6;
+  --whiteColor: #ffffff;
+  --greenColor: #55ad7b;
+  --secondaryGreenColor: #c9f4db;
+  --primeryHoverColor: #e7e7e7;
+
+  /* Animation */
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
